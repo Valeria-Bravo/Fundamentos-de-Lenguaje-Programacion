@@ -1,0 +1,28 @@
+####Javascript　
+
+javascript
+var people = [
+  {
+    name: 'Aang',
+    age: 12,
+  },
+  {
+    name: 'Sokka',
+    age: 15,
+  },
+  {
+    name: 'Toph',
+    age: 12,
+  },
+  {
+    name: 'Iroh',
+    age: 55,
+  }
+];
+var kid_names = [];
+for (let person of people) {
+  if (person.age <= 12) {
+    kid_names.push(person.name);
+  }
+}
+console.log(kid_names);
